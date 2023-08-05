@@ -1,7 +1,7 @@
 const isLoggedIn = sessionStorage.getItem("isLoggedIn");
 
 if (!isLoggedIn && window.location.pathname !== "/login1.html" && window.location.pathname !== "/signup1.html") {
-    window.location.href = "signup1.html";
+    window.location.href = "login1.html";
 }
 
 document.getElementById("loginForm").addEventListener("submit", function (event) {
